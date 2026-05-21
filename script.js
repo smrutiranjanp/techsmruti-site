@@ -1,65 +1,27 @@
-// Smooth scroll for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    });
-});
-
-// Add scroll animation for elements
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
-
-const observer = new IntersectionObserver(function(entries) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.animation = 'slideDown 0.6s ease forwards';
-            observer.unobserve(entry.target);
-        }
-    });
-}, observerOptions);
-
-// Observe skill cards and other elements
-document.querySelectorAll('.skill-card, .cert-item, .timeline-item, .edu-item').forEach(el => {
-    el.style.opacity = '0';
-    observer.observe(el);
-});
-
-// Add active state to nav links on scroll
-window.addEventListener('scroll', () => {
-    let current = '';
-    const sections = document.querySelectorAll('section');
-    
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (pageYOffset >= sectionTop - 200) {
-            current = section.getAttribute('id');
-        }
-    });
-
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === '#' + current) {
-            link.classList.add('active');
-        }
-    });
-});
-
-// Add active link styling
-const style = document.createElement('style');
-style.textContent = `
-    .nav-links a.active {
-        color: var(--secondary-color) !important;
-        border-bottom: 2px solid var(--secondary-color);
+// small interactive behaviors: smooth scroll and active links
+(function(){
+  const links = document.querySelectorAll('a[href^="#"]');
+  links.forEach(a=>a.addEventListener('click', e=>{
+    const href = a.getAttribute('href');
+    if(!href || href === '#') return;
+    const el = document.querySelector(href);
+    if(el){
+      e.preventDefault();
+      el.scrollIntoView({behavior:'smooth',block:'start'});
     }
-`;
-document.head.appendChild(style);
+  }));
+
+  const sections = Array.from(document.querySelectorAll('section[id]'));
+  function onScroll(){
+    const y = window.scrollY + 120;
+    let current = '';
+    for(const s of sections){
+      if(s.offsetTop <= y) current = s.id;
+    }
+    document.querySelectorAll('.nav a').forEach(a=>{
+      a.classList.toggle('active', a.getAttribute('href') === '#'+current);
+    });
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+})();

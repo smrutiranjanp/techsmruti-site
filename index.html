@@ -1,238 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smrutiranjan Parida - Technology Architect</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Smrutiranjan Parida — Technology Architect</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">SmrutiTech</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#expertise">Expertise</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <div class="logo">SMRUTI</div>
+        <div class="mini">Technology Architect</div>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#certs">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Choudhury Smrutiranjan Parida</h1>
-                <p class="role">Technology Architect @ Infosys</p>
-                <p class="tagline">Experienced Technology Leader | Microsoft Technologies | Cloud Solutions | Enterprise Application Development</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="#about" class="btn btn-secondary">Learn More</a>
-                </div>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/smrutiranjan" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/smrutiranjanp" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="intro">
+          <h1>Choudhury Smrutiranjan Parida</h1>
+          <p class="subtitle">Technology Architect • Microsoft Technologies • Cloud & Enterprise Applications</p>
+
+          <p class="summary">Experienced Technology Leader with 14+ years building enterprise-grade systems using .NET, Azure, AWS, Docker & Kubernetes. I design secure, scalable solutions and lead cross-functional teams to deliver business impact.</p>
+
+          <div class="cta">
+            <a class="btn primary" href="#contact">Get in touch</a>
+            <a class="btn ghost" href="https://github.com/smrutiranjanp" target="_blank">View GitHub</a>
+            <a class="btn ghost" href="https://linkedin.com/in/smrutiranjan" target="_blank">LinkedIn</a>
+          </div>
+
+          <ul class="meta-list">
+            <li><strong>Location</strong> Richardson, Texas, United States</li>
+            <li><strong>Followers</strong> 608</li>
+            <li><strong>Connections</strong> 500+</li>
+          </ul>
         </div>
+
+        <aside class="profile-card" aria-hidden="false">
+          <div class="avatar">
+            <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="avatar placeholder">
+              <rect width="120" height="120" rx="18" fill="#e6f7f5"/>
+              <g transform="translate(10,18)" fill="#0f172a" opacity="0.9">
+                <circle cx="50" cy="30" r="22" />
+                <rect x="10" y="62" width="80" height="18" rx="8" />
+              </g>
+            </svg>
+          </div>
+
+          <div class="card-body">
+            <h3>Technology Architect</h3>
+            <p class="muted">Infosys — Apr 2022 — Present</p>
+
+            <div class="small-stats">
+              <div>
+                <div class="num">14+</div>
+                <div class="label">Years</div>
+              </div>
+              <div>
+                <div class="num">608</div>
+                <div class="label">Followers</div>
+              </div>
+              <div>
+                <div class="num">500+</div>
+                <div class="label">Connections</div>
+              </div>
+            </div>
+
+            <a class="btn outline" href="mailto:happy.synergy@yahoo.com">Email</a>
+            <a class="link" href="/resume.pdf" target="_blank" rel="noopener">Download Résumé</a>
+          </div>
+        </aside>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>With <strong>14+ years of expertise</strong>, I specialize in developing enterprise-grade applications using Microsoft technologies, leading teams from initiation to successful delivery.</p>
-                    
-                    <h3>Core Competencies</h3>
-                    <ul class="competencies">
-                        <li><strong>Technical Expertise:</strong> System analysis, estimation, design, and development using .NET, SQL Server, Azure, and AWS (S3, Lambda)</li>
-                        <li><strong>Cloud & DevOps:</strong> Azure DevSecOps, Docker, Kubernetes, N-tier architecture</li>
-                        <li><strong>Design Patterns:</strong> Creational (Factory, Singleton), Structural (Facade, Proxy), and architectural models (MVC, MVVM)</li>
-                        <li><strong>SDLC & Agile:</strong> Hands-on experience across all SDLC phases with Agile and Scrum methodologies</li>
-                        <li><strong>Leadership:</strong> Project planning, task allocation, code reviews, mentoring teams</li>
-                        <li><strong>Domain Expertise:</strong> Manufacturing and Hi-Tech sectors</li>
-                    </ul>
-                </div>
-                <div class="stats">
-                    <div class="stat-item">
-                        <h4>14+</h4>
-                        <p>Years of Experience</p>
-                    </div>
-                    <div class="stat-item">
-                        <h4>500+</h4>
-                        <p>Professional Connections</p>
-                    </div>
-                    <div class="stat-item">
-                        <h4>608</h4>
-                        <p>LinkedIn Followers</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>I lead teams to design and deliver secure, scalable enterprise solutions. My hands-on experience spans system analysis, .NET development, cloud architecture (Azure & AWS), CI/CD, and operational excellence.</p>
+      </div>
     </section>
 
-    <!-- Expertise Section -->
-    <section id="expertise" class="expertise">
-        <div class="container">
-            <h2>Top Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fas fa-cloud"></i>
-                    <h3>Microsoft Azure</h3>
-                    <p>Cloud architecture and deployment solutions</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-cube"></i>
-                    <h3>Software Solution Architecture</h3>
-                    <p>Enterprise-grade system design</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-tasks"></i>
-                    <h3>Agile Project Management</h3>
-                    <p>Scrum and iterative development</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-layer-group"></i>
-                    <h3>Docker & Kubernetes</h3>
-                    <p>Containerization and orchestration</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-server"></i>
-                    <h3>Amazon Web Services</h3>
-                    <p>AWS infrastructure and services</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-code"></i>
-                    <h3>.NET Development</h3>
-                    <p>C# and enterprise applications</p>
-                </div>
-            </div>
+    <section id="skills" class="section light">
+      <div class="container">
+        <h2>Top Skills</h2>
+        <div class="chips">
+          <span>Microsoft Azure</span>
+          <span>Software Solution Architecture</span>
+          <span>Agile Project Management</span>
+          <span>Docker & Kubernetes</span>
+          <span>AWS</span>
+          <span>.NET / C#</span>
+          <span>API Security</span>
+          <span>Design Patterns</span>
         </div>
+      </div>
     </section>
 
-    <!-- Experience Section -->
-    <section class="experience">
-        <div class="container">
-            <h2>Professional Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>Technology Architect</h3>
-                    <p class="company">Infosys</p>
-                    <p class="duration">Apr 2022 - Present (4+ years)</p>
-                    <p>Leading enterprise architecture initiatives and digital transformation projects</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Technology Lead</h3>
-                    <p class="company">Infosys</p>
-                    <p class="duration">Oct 2018 - Apr 2022 (3+ years)</p>
-                    <p>Directed technical teams and project delivery across Manufacturing and Hi-Tech sectors</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Senior Software Engineer</h3>
-                    <p class="company">Mindfire Solutions</p>
-                    <p class="duration">2011 - 2015 (4+ years)</p>
-                    <p>Developed enterprise applications and mentored junior developers</p>
-                </div>
-            </div>
+    <section id="experience" class="section">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="list">
+          <article>
+            <h3>Technology Architect</h3>
+            <p class="muted">Infosys — Apr 2022 — Present</p>
+            <p>Architecting cloud-native solutions, security, and platform modernization for manufacturing and hi‑tech customers.</p>
+          </article>
+
+          <article>
+            <h3>Technology Lead</h3>
+            <p class="muted">Infosys — Oct 2018 — Apr 2022</p>
+            <p>Led delivery teams and guided architecture decisions across multiple programs.</p>
+          </article>
+
+          <article>
+            <h3>Senior Software Engineer</h3>
+            <p class="muted">Mindfire Solutions — 2011 — 2015</p>
+            <p>Built enterprise applications and mentored engineering teams.</p>
+          </article>
         </div>
+      </div>
     </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications" class="certifications">
-        <div class="container">
-            <h2>Certifications & Learning</h2>
-            <div class="certs-grid">
-                <div class="cert-item">
-                    <div class="cert-badge">Microsoft</div>
-                    <h4>Azure Security Engineer Associate</h4>
-                    <p>Dec 2023</p>
-                </div>
-                <div class="cert-item">
-                    <div class="cert-badge">Microsoft</div>
-                    <h4>Azure Data Engineer Associate</h4>
-                    <p>Nov 2023</p>
-                </div>
-                <div class="cert-item">
-                    <div class="cert-badge">Microsoft</div>
-                    <h4>Azure Developer Associate</h4>
-                    <p>2022</p>
-                </div>
-                <div class="cert-item">
-                    <div class="cert-badge">UMD</div>
-                    <h4>DSBA: Data Science Landscape</h4>
-                    <p>Aug 2024</p>
-                </div>
-                <div class="cert-item">
-                    <div class="cert-badge">UMD</div>
-                    <h4>AI and Career Empowerment</h4>
-                    <p>Aug 2024</p>
-                </div>
-                <div class="cert-item">
-                    <div class="cert-badge">API Academy</div>
-                    <h4>API Security Architect</h4>
-                    <p>2021</p>
-                </div>
-            </div>
-        </div>
+    <section id="certs" class="section light">
+      <div class="container">
+        <h2>Certifications & Learning</h2>
+        <ul class="cert-list">
+          <li>Microsoft Certified: Azure Security Engineer Associate — Dec 2023</li>
+          <li>Microsoft Certified: Azure Data Engineer Associate — Nov 2023</li>
+          <li>Microsoft Certified: Azure Developer Associate</li>
+          <li>DSBA: Introduction to the Data Science Landscape — UMD</li>
+          <li>AI and Career Empowerment — UMD</li>
+          <li>API Security Architect — API Academy</li>
+        </ul>
+      </div>
     </section>
 
-    <!-- Education Section -->
-    <section class="education">
-        <div class="container">
-            <h2>Education</h2>
-            <div class="edu-items">
-                <div class="edu-item">
-                    <h3>Master of Technology (MTech)</h3>
-                    <p class="institution">Birla Institute of Technology and Science (BITS), Pilani</p>
-                    <p class="field">Software Systems</p>
-                    <p class="year">2017 - 2019</p>
-                </div>
-                <div class="edu-item">
-                    <h3>Bachelor of Engineering</h3>
-                    <p class="institution">Biju Patnaik University of Technology, Odisha</p>
-                    <p class="field">Electronics & Telecommunications Engineering</p>
-                    <p class="year">2007 - 2011</p>
-                </div>
-            </div>
+    <section id="education" class="section">
+      <div class="container">
+        <h2>Education</h2>
+        <div class="edu-grid">
+          <div>
+            <h3>MTech, Software Systems</h3>
+            <p class="muted">Birla Institute of Technology and Science, Pilani — 2017–2019</p>
+          </div>
+          <div>
+            <h3>B.Eng., Electronics & Telecommunications</h3>
+            <p class="muted">Biju Patnaik University of Technology — 2007–2011</p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Let's Connect</h2>
-            <p>Open to collaborating on impactful solutions and achieving business success</p>
-            <div class="contact-methods">
-                <a href="mailto:happy.synergy@yahoo.com" class="contact-btn">
-                    <i class="fas fa-envelope"></i>
-                    Email
-                </a>
-                <a href="https://linkedin.com/in/smrutiranjan" target="_blank" class="contact-btn">
-                    <i class="fab fa-linkedin"></i>
-                    LinkedIn
-                </a>
-                <a href="https://github.com/smrutiranjanp" target="_blank" class="contact-btn">
-                    <i class="fab fa-github"></i>
-                    GitHub
-                </a>
-            </div>
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="lead">Open to collaborations and career opportunities. Recruiters: contact via email.</p>
+        <div class="contact-row">
+          <a class="btn primary" href="mailto:happy.synergy@yahoo.com">Email Me</a>
+          <a class="btn outline" href="https://linkedin.com/in/smrutiranjan" target="_blank">LinkedIn</a>
+          <a class="btn outline" href="https://github.com/smrutiranjanp" target="_blank">GitHub</a>
         </div>
+      </div>
     </section>
+  </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Choudhury Smrutiranjan Parida. All rights reserved.</p>
-            <p>Richardson, Texas, United States</p>
-        </div>
-    </footer>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© 2026 Choudhury Smrutiranjan Parida</div>
+      <div class="muted">Richardson, Texas • He/Him</div>
+    </div>
+  </footer>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
