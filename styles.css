@@ -866,7 +866,7 @@ img {
 ================================ */
 .skills-categories {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--space-lg);
   margin-bottom: var(--space-2xl);
 }
@@ -1224,7 +1224,7 @@ img {
   }
   
   .skills-categories {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   
   .edu-cards {
