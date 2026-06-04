@@ -410,13 +410,6 @@ img {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
-  40% { transform: translateX(-50%) translateY(-10px); }
-  60% { transform: translateX(-50%) translateY(-5px); }
 }
 
 .hero-scroll i {
@@ -674,14 +667,6 @@ img {
 .timeline-item {
   position: relative;
   padding-bottom: var(--space-xl);
-  opacity: 0;
-  transform: translateX(-20px);
-  transition: all 0.6s ease;
-}
-
-.timeline-item.visible {
-  opacity: 1;
-  transform: translateX(0);
 }
 
 .timeline-marker {
