@@ -1,187 +1,544 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Smrutiranjan Parida — Technology Architect</title>
-
-  <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Choudhury Smrutiranjan Parida - Technology Architect specializing in Microsoft Azure, Cloud Solutions, and Enterprise Applications">
+  <title>Smrutiranjan Parida | Technology Architect</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <div class="brand">
-        <div class="logo">SMRUTI</div>
-        <div class="mini">Technology Architect</div>
+  <!-- Animated Background -->
+  <div class="bg-animation">
+    <div class="bg-gradient"></div>
+    <div class="bg-grid"></div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav-header">
+    <nav class="nav-container">
+      <a href="#" class="nav-logo">SP<span class="accent">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="mailto:happy.synergy@yahoo.com" class="nav-cta">Get in Touch</a>
+        <button class="nav-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#certs">Certifications</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
+    </nav>
   </header>
 
   <main>
+    <!-- Hero Section -->
     <section class="hero" id="home">
-      <div class="container hero-grid">
-        <div class="intro">
-          <h1>Choudhury Smrutiranjan Parida</h1>
-          <p class="subtitle">Technology Architect • Microsoft Technologies • Cloud & Enterprise Applications</p>
-
-          <p class="summary">Experienced Technology Leader with 14+ years building enterprise-grade systems using .NET, Azure, AWS, Docker & Kubernetes. I design secure, scalable solutions and lead cross-functional teams to deliver business impact.</p>
-
-          <div class="cta">
-            <a class="btn primary" href="#contact">Get in touch</a>
-            <a class="btn ghost" href="https://github.com/smrutiranjanp" target="_blank">View GitHub</a>
-            <a class="btn ghost" href="https://linkedin.com/in/smrutiranjan" target="_blank">LinkedIn</a>
-          </div>
-
-          <ul class="meta-list">
-            <li><strong>Location</strong> Richardson, Texas, United States</li>
-            <li><strong>Followers</strong> 608</li>
-            <li><strong>Connections</strong> 500+</li>
-          </ul>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for opportunities
         </div>
-
-        <aside class="profile-card" aria-hidden="false">
-          <div class="avatar">
-            <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="avatar placeholder">
-              <rect width="120" height="120" rx="18" fill="#e6f7f5"/>
-              <g transform="translate(10,18)" fill="#0f172a" opacity="0.9">
-                <circle cx="50" cy="30" r="22" />
-                <rect x="10" y="62" width="80" height="18" rx="8" />
-              </g>
-            </svg>
+        
+        <h1 class="hero-title">
+          <span class="hero-name">Choudhury Smrutiranjan</span>
+          <span class="hero-surname">Parida</span>
+        </h1>
+        
+        <div class="hero-role">
+          <span class="role-line"></span>
+          <span class="role-text">Technology Architect</span>
+        </div>
+        
+        <p class="hero-description">
+          14+ years architecting enterprise-grade solutions on Microsoft Azure & AWS. 
+          Specializing in cloud-native applications, API security, and distributed systems at scale.
+        </p>
+        
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-value">14+</span>
+            <span class="stat-label">Years Experience</span>
           </div>
-
-          <div class="card-body">
-            <h3>Technology Architect</h3>
-            <p class="muted">Infosys — Apr 2022 — Present</p>
-
-            <div class="small-stats">
-              <div>
-                <div class="num">14+</div>
-                <div class="label">Years</div>
-              </div>
-              <div>
-                <div class="num">608</div>
-                <div class="label">Followers</div>
-              </div>
-              <div>
-                <div class="num">500+</div>
-                <div class="label">Connections</div>
-              </div>
+          <div class="stat">
+            <span class="stat-value">50+</span>
+            <span class="stat-label">Projects Delivered</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">608</span>
+            <span class="stat-label">LinkedIn Followers</span>
+          </div>
+        </div>
+        
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">
+            <span>Let's Connect</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="https://github.com/smrutiranjanp" target="_blank" class="btn btn-secondary">
+            <i class="fab fa-github"></i>
+            <span>View GitHub</span>
+          </a>
+        </div>
+        
+        <div class="hero-scroll">
+          <span>Scroll to explore</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="profile-ring">
+          <div class="ring ring-1"></div>
+          <div class="ring ring-2"></div>
+          <div class="ring ring-3"></div>
+          <div class="profile-avatar">
+            <div class="avatar-placeholder">
+              <span>SP</span>
             </div>
-
-            <a class="btn outline" href="mailto:happy.synergy@yahoo.com">Email</a>
-            <a class="link" href="/resume.pdf" target="_blank" rel="noopener">Download Résumé</a>
           </div>
-        </aside>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <div class="container">
-        <h2>About</h2>
-        <p>I lead teams to design and deliver secure, scalable enterprise solutions. My hands-on experience spans system analysis, .NET development, cloud architecture (Azure & AWS), CI/CD, and operational excellence.</p>
-      </div>
-    </section>
-
-    <section id="skills" class="section light">
-      <div class="container">
-        <h2>Top Skills</h2>
-        <div class="chips">
-          <span>Microsoft Azure</span>
-          <span>Software Solution Architecture</span>
-          <span>Agile Project Management</span>
-          <span>Docker & Kubernetes</span>
-          <span>AWS</span>
-          <span>.NET / C#</span>
-          <span>API Security</span>
-          <span>Design Patterns</span>
+        </div>
+        <div class="floating-icons">
+          <div class="fi fi-1"><i class="fab fa-microsoft"></i></div>
+          <div class="fi fi-2"><i class="fab fa-aws"></i></div>
+          <div class="fi fi-3"><i class="fab fa-docker"></i></div>
+          <div class="fi fi-4"><i class="fab fa-cloud"></i></div>
         </div>
       </div>
     </section>
 
-    <section id="experience" class="section">
-      <div class="container">
-        <h2>Experience</h2>
-        <div class="list">
-          <article>
-            <h3>Technology Architect</h3>
-            <p class="muted">Infosys — Apr 2022 — Present</p>
-            <p>Architecting cloud-native solutions, security, and platform modernization for manufacturing and hi‑tech customers.</p>
-          </article>
-
-          <article>
-            <h3>Technology Lead</h3>
-            <p class="muted">Infosys — Oct 2018 — Apr 2022</p>
-            <p>Led delivery teams and guided architecture decisions across multiple programs.</p>
-          </article>
-
-          <article>
-            <h3>Senior Software Engineer</h3>
-            <p class="muted">Mindfire Solutions — 2011 — 2015</p>
-            <p>Built enterprise applications and mentored engineering teams.</p>
-          </article>
+    <!-- About Section -->
+    <section class="section about" id="about">
+      <div class="section-header">
+        <span class="section-tag">01</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      
+      <div class="about-content">
+        <div class="about-text">
+          <p class="lead">
+            As a Technology Architect at Infosys, I design and lead the implementation of 
+            cloud-native solutions that drive business transformation for enterprise clients.
+          </p>
+          <p>
+            My expertise spans the full spectrum of modern software engineering—from 
+            designing scalable microservices architectures to implementing robust CI/CD pipelines. 
+            I thrive on solving complex technical challenges and mentoring teams to deliver excellence.
+          </p>
+          <p>
+            Currently focused on Azure cloud solutions, Kubernetes orchestration, and API security 
+            architectures for manufacturing and hi-tech industry leaders.
+          </p>
         </div>
-      </div>
-    </section>
-
-    <section id="certs" class="section light">
-      <div class="container">
-        <h2>Certifications & Learning</h2>
-        <ul class="cert-list">
-          <li>Microsoft Certified: Azure Security Engineer Associate — Dec 2023</li>
-          <li>Microsoft Certified: Azure Data Engineer Associate — Nov 2023</li>
-          <li>Microsoft Certified: Azure Developer Associate</li>
-          <li>DSBA: Introduction to the Data Science Landscape — UMD</li>
-          <li>AI and Career Empowerment — UMD</li>
-          <li>API Security Architect — API Academy</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="education" class="section">
-      <div class="container">
-        <h2>Education</h2>
-        <div class="edu-grid">
-          <div>
-            <h3>MTech, Software Systems</h3>
-            <p class="muted">Birla Institute of Technology and Science, Pilani — 2017–2019</p>
+        
+        <div class="about-highlights">
+          <div class="highlight-card">
+            <i class="fas fa-building"></i>
+            <h3>Current Role</h3>
+            <p>Technology Architect at Infosys</p>
+            <span class="highlight-meta">Since April 2022 • Richardson, TX</span>
           </div>
-          <div>
-            <h3>B.Eng., Electronics & Telecommunications</h3>
-            <p class="muted">Biju Patnaik University of Technology — 2007–2011</p>
+          <div class="highlight-card">
+            <i class="fas fa-graduation-cap"></i>
+            <h3>Education</h3>
+            <p>MTech Software Systems</p>
+            <span class="highlight-meta">BITS Pilani • 2017-2019</span>
+          </div>
+          <div class="highlight-card">
+            <i class="fas fa-award"></i>
+            <h3>Certifications</h3>
+            <p>Azure Security Engineer</p>
+            <span class="highlight-meta">Microsoft Certified • 2023</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section contact-section">
-      <div class="container">
-        <h2>Contact</h2>
-        <p class="lead">Open to collaborations and career opportunities. Recruiters: contact via email.</p>
-        <div class="contact-row">
-          <a class="btn primary" href="mailto:happy.synergy@yahoo.com">Email Me</a>
-          <a class="btn outline" href="https://linkedin.com/in/smrutiranjan" target="_blank">LinkedIn</a>
-          <a class="btn outline" href="https://github.com/smrutiranjanp" target="_blank">GitHub</a>
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+      <div class="section-header">
+        <span class="section-tag">02</span>
+        <h2 class="section-title">Experience</h2>
+      </div>
+      
+      <div class="timeline">
+        <div class="timeline-item" data-delay="0">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-date">April 2022 — Present</span>
+              <span class="timeline-duration">3+ Years</span>
+            </div>
+            <h3 class="timeline-title">Technology Architect</h3>
+            <p class="timeline-company">
+              <i class="fas fa-building"></i> Infosys
+              <span class="location"><i class="fas fa-map-marker-alt"></i> Richardson, TX</span>
+            </p>
+            <ul class="timeline-highlights">
+              <li>Architecting cloud-native solutions for manufacturing and hi-tech clients</li>
+              <li>Leading security implementations and platform modernization initiatives</li>
+              <li>Designing microservices architectures using Azure, Kubernetes, and .NET</li>
+              <li>Mentoring engineering teams on cloud best practices and DevOps</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>Azure</span>
+              <span>.NET</span>
+              <span>Kubernetes</span>
+              <span>Terraform</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-item" data-delay="100">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-date">Oct 2018 — April 2022</span>
+              <span class="timeline-duration">3.5 Years</span>
+            </div>
+            <h3 class="timeline-title">Technology Lead</h3>
+            <p class="timeline-company">
+              <i class="fas fa-building"></i> Infosys
+              <span class="location"><i class="fas fa-map-marker-alt"></i> Hyderabad, India</span>
+            </p>
+            <ul class="timeline-highlights">
+              <li>Led delivery teams across multiple enterprise programs</li>
+              <li>Guided architecture decisions for financial services clients</li>
+              <li>Implemented CI/CD pipelines and automated testing frameworks</li>
+              <li>Reduced deployment time by 60% through infrastructure automation</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>Azure DevOps</span>
+              <span>C#</span>
+              <span>SQL Server</span>
+              <span>Docker</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-item" data-delay="200">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-date">2011 — 2015</span>
+              <span class="timeline-duration">4 Years</span>
+            </div>
+            <h3 class="timeline-title">Senior Software Engineer</h3>
+            <p class="timeline-company">
+              <i class="fas fa-building"></i> Mindfire Solutions
+              <span class="location"><i class="fas fa-map-marker-alt"></i> Bhubaneswar, India</span>
+            </p>
+            <ul class="timeline-highlights">
+              <li>Built enterprise applications and mentored junior engineers</li>
+              <li>Developed core modules for healthcare and CRM platforms</li>
+              <li>Implemented design patterns and code review processes</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>.NET</span>
+              <span>SQL Server</span>
+              <span>jQuery</span>
+              <span>WCF</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+      <div class="section-header">
+        <span class="section-tag">03</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+      
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="project-content">
+            <h3>Azure DevOps Security Automation</h3>
+            <p>Python-based solutions for managing Azure DevOps security via API. Automated permission management and compliance checking for enterprise teams.</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Azure DevOps API</span>
+              <span>REST</span>
+            </div>
+            <a href="https://github.com/smrutiranjanp/azuredevops-security-automation" target="_blank" class="project-link">
+              View Project <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </article>
+        
+        <article class="project-card">
+          <div class="project-icon">
+            <i class="fas fa-cloud-upload-alt"></i>
+          </div>
+          <div class="project-content">
+            <h3>Cloud Based Document Translator</h3>
+            <p>Cloud-native document translation service supporting multiple formats. Built with scalability and performance in mind using Azure services.</p>
+            <div class="project-tech">
+              <span>Azure</span>
+              <span>Python</span>
+              <span>Azure Functions</span>
+            </div>
+            <a href="https://github.com/smrutiranjanp/CloudBasedDocTranslator" target="_blank" class="project-link">
+              View Project <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </article>
+        
+        <article class="project-card">
+          <div class="project-icon">
+            <i class="fab fa-docker"></i>
+          </div>
+          <div class="project-content">
+            <h3>Docker & Kubernetes Templates</h3>
+            <p>Collection of production-ready Docker and Kubernetes templates for modern application deployment. Includes Helm charts and ArgoCD configurations.</p>
+            <div class="project-tech">
+              <span>Docker</span>
+              <span>Kubernetes</span>
+              <span>Helm</span>
+              <span>ArgoCD</span>
+            </div>
+            <a href="https://github.com/smrutiranjanp/Dockerdemo" target="_blank" class="project-link">
+              View Project <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </article>
+        
+        <article class="project-card">
+          <div class="project-icon">
+            <i class="fab fa-js-square"></i>
+          </div>
+          <div class="project-content">
+            <h3>City Weather App</h3>
+            <p>Modern weather application with real-time updates and beautiful UI. Demonstrates modern JavaScript frameworks and API integration.</p>
+            <div class="project-tech">
+              <span>JavaScript</span>
+              <span>Weather API</span>
+              <span>Responsive UI</span>
+            </div>
+            <a href="https://github.com/smrutiranjanp/cityweatherapp" target="_blank" class="project-link">
+              View Project <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+      <div class="section-header">
+        <span class="section-tag">04</span>
+        <h2 class="section-title">Technical Skills</h2>
+      </div>
+      
+      <div class="skills-categories">
+        <div class="skill-category">
+          <h3 class="category-title">
+            <i class="fab fa-microsoft"></i>
+            Cloud Platforms
+          </h3>
+          <div class="skill-list">
+            <span class="skill-tag">Microsoft Azure</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Azure DevOps</span>
+            <span class="skill-tag">ARM Templates</span>
+            <span class="skill-tag">Terraform</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h3 class="category-title">
+            <i class="fas fa-code"></i>
+            Development
+          </h3>
+          <div class="skill-list">
+            <span class="skill-tag">.NET / C#</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">SQL Server</span>
+            <span class="skill-tag">NoSQL</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h3 class="category-title">
+            <i class="fas fa-cubes"></i>
+            Architecture
+          </h3>
+          <div class="skill-list">
+            <span class="skill-tag">Microservices</span>
+            <span class="skill-tag">API Design</span>
+            <span class="skill-tag">Design Patterns</span>
+            <span class="skill-tag">SOLID Principles</span>
+            <span class="skill-tag">Domain-Driven Design</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h3 class="category-title">
+            <i class="fas fa-dharmachakra"></i>
+            DevOps & Security
+          </h3>
+          <div class="skill-list">
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Kubernetes</span>
+            <span class="skill-tag">CI/CD Pipelines</span>
+            <span class="skill-tag">API Security</span>
+            <span class="skill-tag">Azure Security</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="certifications">
+        <h3 class="cert-title">
+          <i class="fas fa-certificate"></i>
+          Certifications
+        </h3>
+        <div class="cert-list">
+          <div class="cert-item">
+            <span class="cert-badge">Microsoft</span>
+            <span class="cert-name">Azure Security Engineer Associate</span>
+            <span class="cert-date">Dec 2023</span>
+          </div>
+          <div class="cert-item">
+            <span class="cert-badge">Microsoft</span>
+            <span class="cert-name">Azure Data Engineer Associate</span>
+            <span class="cert-date">Nov 2023</span>
+          </div>
+          <div class="cert-item">
+            <span class="cert-badge">Microsoft</span>
+            <span class="cert-name">Azure Developer Associate</span>
+            <span class="cert-date">2023</span>
+          </div>
+          <div class="cert-item">
+            <span class="cert-badge">API Academy</span>
+            <span class="cert-name">API Security Architect</span>
+            <span class="cert-date">2023</span>
+          </div>
+          <div class="cert-item">
+            <span class="cert-badge">UMD</span>
+            <span class="cert-name">DSBA: Data Science Landscape</span>
+            <span class="cert-date">2023</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+      <div class="section-header">
+        <span class="section-tag">05</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      
+      <div class="edu-cards">
+        <div class="edu-card">
+          <div class="edu-icon">
+            <i class="fas fa-university"></i>
+          </div>
+          <div class="edu-content">
+            <span class="edu-year">2017 — 2019</span>
+            <h3>Master of Technology (MTech)</h3>
+            <p class="edu-focus">Software Systems</p>
+            <p class="edu-school">Birla Institute of Technology and Science (BITS), Pilani</p>
+          </div>
+        </div>
+        
+        <div class="edu-card">
+          <div class="edu-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="edu-content">
+            <span class="edu-year">2007 — 2011</span>
+            <h3>Bachelor of Engineering (B.Eng)</h3>
+            <p class="edu-focus">Electronics & Telecommunications</p>
+            <p class="edu-school">Biju Patnaik University of Technology (BPUT)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+      <div class="contact-container">
+        <div class="contact-header">
+          <span class="section-tag">06</span>
+          <h2 class="section-title">Let's Work Together</h2>
+          <p class="contact-subtitle">
+            Open to discussing new opportunities, consulting projects, or just connecting. 
+            Feel free to reach out!
+          </p>
+        </div>
+        
+        <div class="contact-methods">
+          <a href="mailto:happy.synergy@yahoo.com" class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <span class="method-label">Email</span>
+            <span class="method-value">happy.synergy@yahoo.com</span>
+          </a>
+          
+          <a href="https://linkedin.com/in/smrutiranjanp" target="_blank" class="contact-card">
+            <i class="fab fa-linkedin"></i>
+            <span class="method-label">LinkedIn</span>
+            <span class="method-value">smrutiranjanp</span>
+          </a>
+          
+          <a href="https://github.com/smrutiranjanp" target="_blank" class="contact-card">
+            <i class="fab fa-github"></i>
+            <span class="method-label">GitHub</span>
+            <span class="method-value">smrutiranjanp</span>
+          </a>
+          
+          <div class="contact-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <span class="method-label">Location</span>
+            <span class="method-value">Richardson, Texas, USA</span>
+          </div>
+        </div>
+        
+        <div class="contact-cta">
+          <a href="mailto:happy.synergy@yahoo.com" class="btn btn-primary btn-large">
+            <i class="fas fa-paper-plane"></i>
+            <span>Send Me a Message</span>
+          </a>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="footer">
-    <div class="container footer-inner">
-      <div>© 2026 Choudhury Smrutiranjan Parida</div>
-      <div class="muted">Richardson, Texas • He/Him</div>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <span class="footer-logo">SP<span class="accent">.</span></span>
+        <p>Building the future, one solution at a time.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://linkedin.com/in/smrutiranjanp" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/smrutiranjanp" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:happy.synergy@yahoo.com"><i class="fas fa-envelope"></i></a>
+      </div>
+      <div class="footer-meta">
+        <p>&copy; 2026 Choudhury Smrutiranjan Parida. All rights reserved.</p>
+        <p>Richardson, Texas • He/Him</p>
+      </div>
     </div>
   </footer>
 
